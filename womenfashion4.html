@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <title>Document</title>
+
+    <style>
+        img{
+            width: 60px;
+            height: 60px;
+        }
+        ul{
+            list-style: none;
+            float: left;
+        }
+        ul li{
+            margin-bottom: 8px;
+        }
+        .big_img{
+            width: 350px;
+            height: 400px;
+            float: left;
+        margin-top: 15px;
+            margin-left: 5px;
+
+        }
+    </style>
+    <script>
+          $(document).ready(function(){
+            $(".small_img").hover(function(){
+                $(".big_img").attr('src',$(this).attr('src'));
+            });
+          });
+    </script>
+</head>
+<body>
+
+ <ul>
+    <li><img src=".\images\womenfashion40.jpg"class="small_img"></li>
+    <li><img src=".\images\womenfashion41.jpg"class="small_img"></li>
+    <li><img src=".\images\womenfashion42.jpg"class="small_img"></li>
+
+ </ul>
+ <img src=".\images\womenfashion40.jpg"class="big_img">   
+ <p>Price:2500/-Rupuess
+    <br>
+    Contact no:9951530735
+ </p>
+</body>
+</html>

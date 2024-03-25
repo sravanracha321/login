@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <title>Document</title>
+
+    <script>
+        function SubmitClick(){
+            var username=document.getElementById("UserName").value;
+            var password=document.getElementById("Password").value;
+            if(username=="Sravankumar" && password=="9951530735"){
+                location.href="./handlooms.html"
+            }else{
+                alert("Login Failed\n Invaild userName\n Password")
+            }
+        }
+    </script>
+
+    <style>
+        body{
+            text-align: center;
+            height: 10px;
+            width: 200px;
+            margin-left: 400px;
+            margin-top: 25px;
+        }
+
+         
+div{
+    background-color: darkcyan;
+ justify-content: center;
+ align-items: center;
+ height: 180px;
+
+    border-radius: 5px;
+}
+button{
+    border: none;
+    border:1px solid white;
+    width: 100px;
+    background-color: darkcyan;
+    color: white;
+    
+}
+
+dt{
+    color: white;
+}
+p{
+    margin-top: -100px;
+    margin-left: 250px;
+    color: darkcyan;
+}
+
+    </style>
+</head>
+<body>
+    <div>
+    <dl>
+        <dt>UserName</dt>
+        <dd><input type="text"id="UserName"></dd>
+        <dt>Password</dt>
+        <dd><input type="Password"id="Password"></dd>
+    </dl>
+
+    <button onclick="SubmitClick()">Submit</button>
+</div>
+<p>Password:9951530735</p>
+<p>UserName:Sravankumar</p>
+
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
+
+
